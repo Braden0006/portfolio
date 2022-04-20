@@ -1,0 +1,136 @@
+
+:root {
+    --main-font: 'Source Sans Pro', sans-serif;
+    --main-color: #4845D2;
+    --secondary-font: 'Poppins', sans-serif;
+    --secondary-color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p, h1, h3 {
+    margin: 0.8rem;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.background {
+    background-color: black;
+}
+
+#home-page {
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+}
+
+#home-page::before {
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+}
+
+#about-page, #skills-page, #project-page {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    color: var(--main-color);
+    background-color: black;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.logo-icon {
+    height: 3rem;
+}
+
+.line-icon {
+    height: 3rem;
+    width: 3.8rem;
+}
+
+.hidden {
+    transform: translateY(-30rem);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 4rem;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    font-size: 3rem;
+}
+
+.name-intro {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 6rem;
+}
+
+.nav-links {
+    margin: 1.5rem;
+}
+
+.about-container, .skills-container, .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    text-align: center;
+}
+
+.about-intro, .skills-intro, .project-intro {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+.about-img {
+    height: 5rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    margin-top: 4rem;
+}
+
+.skills-icon {
+    height: 6rem;
+}
