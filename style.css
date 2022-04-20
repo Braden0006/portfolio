@@ -114,7 +114,7 @@ ul {
     text-align: center;
 }
 
-.about-intro, .skills-intro, .project-intro {
+.about-title, .skills-title, .project-title {
     color: var(--secondary-color);
     font-family: var(--secondary-font);
 }

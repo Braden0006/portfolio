@@ -1,0 +1,52 @@
+:root {
+  --main-font: "Source Sans Pro", sans-serif;
+  --main-color: #4845d2;
+  --secondary-font: "Poppins", sans-serif;
+  --secondary-color: white;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#contact-page {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  color: var(--main-color);
+  background-color: black;
+  font-family: var(--main-font);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-label {
+    color: var(--secondary-color);
+    display: flex;
+    margin: 1rem 1rem 1rem 1.5rem;
+}
+
+input[type=text], textarea {
+    width: 90%;
+    margin: auto;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
