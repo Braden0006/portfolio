@@ -159,6 +159,7 @@ ul {
     border-radius: 1rem;
     padding: 1rem 3rem;
     color: var(--main-color);
+    background-color: var(--secondary-color);
     font-size: 2.5rem;
     cursor: pointer;
 }
