@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -23,20 +24,21 @@
       <section id="home-page">
         <header>
           <div class="navbar-container">
-            <img class="logo-icon" src="/img/google.svg" alt="" />
-            <img class="line-icon" src="/img/lines.svg" alt="" />
+            <img data-aos="fade-right" class="logo-icon" src="/img/google.svg" alt="" />
+            <img data-aos="fade-left" class="line-icon" src="/img/lines.svg" alt="" />
           </div>
           <ul class="hidden link-container">
-            <li class="nav-links"><a href="#">About</a></li>
-            <li class="nav-links link"><a href="#">Projects</a></li>
-            <li class="nav-links"><a href="#">Contact</a></li>
+            <li class="nav-links"><a href="#about-page">About</a></li>
+            <li class="nav-links"><a href="#skills-page">Skills</a></li>
+            <li class="nav-links link"><a href="#project-page">Projects</a></li>
+            <li class="nav-links"><a href="#hire-page">Contact</a></li>
           </ul>
         </header>
         <main>
           <div class="name-container">
             <p class="name-title">Hi I'm</p>
-            <h1>Braden</h1>
-            <h3>Web Developer</h3>
+            <h1 class="name-h1">Braden</h1>
+            <h3 class="name-description">Web Developer</h3>
           </div>
         </main>
       </section>
@@ -46,11 +48,11 @@
       <main class="about-container">
         <div class="about">
           <h2 class="about-title">About me</h2>
-          <p class="about-paragraph">
+          <p data-aos="zoom-out" class="about-paragraph">
             I'm an aspiring Web Developer and have been studying HMTL, CSS, and
             Javascript for the past year and a half
           </p>
-          <p class="about-paragraph">
+          <p data-aos="zoom-out" class="about-paragraph">
             I have been interested in tech for most of my life and am excited to
             continue learning and growing with it
           </p>
@@ -62,11 +64,11 @@
       <main class="skills-container">
         <h2 class="skills-title">Skills</h2>
         <div class="skills-list">
-          <img class="skills-icon" src="/img/html.png" alt="">
-          <img class="skills-icon" src="/img/css-3.png" alt="">
-          <img class="skills-icon" src="/img/js.png" alt="">
-          <img class="skills-icon" src="/img/github.png" alt="">
-          <img class="skills-icon" src="/img/terminal.png" alt="">
+          <img class="skills-icon" data-aos="fade-down" src="/img/html.png" alt="" />
+          <img class="skills-icon" data-aos="fade-down" src="/img/css-3.png" alt="" />
+          <img class="skills-icon" data-aos="fade-down" src="/img/js.png" alt="" />
+          <img class="skills-icon" data-aos="fade-down" src="/img/github.png" alt="" />
+          <img data-aos="fade-down" class="skills-icon" src="/img/terminal.png" alt="" />
         </div>
       </main>
     </section>
@@ -76,6 +78,20 @@
         <h2 class="project-title">Projects</h2>
       </main>
     </section>
+
+    <section id="hire-page">
+      <main class="hire-container">
+        <h2 class="hire-title">Need a website built?</h2>
+        <a href="/contact-page/contact-page.html"
+          ><button data-aos="fade-down" class="hire-button">Hire me!</button></a
+        >
+      </main>
+    </section>
+
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
